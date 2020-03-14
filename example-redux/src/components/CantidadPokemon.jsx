@@ -1,11 +1,20 @@
 import React, {Component, Fragment} from 'react';
+import {connect} from 'react-redux';
 
-export class CantidadPokemon extends Component {
+class CantidadPokemon extends Component {
     render () {
         return (
             <Fragment>
-                Unidades: 30
+                Unidades: {this.props.game_shop.pokemon}
             </Fragment>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        game_shop: state.game_shop
+    }
+}
+
+export default connect(mapStateToProps)(CantidadPokemon);
