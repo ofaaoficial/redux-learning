@@ -7,13 +7,13 @@ class CompraPokemon extends Component {
         return (
             <Fragment>
                 <section className="text-center">
-                    <button className="btn btn-outline-success btn-sm mr" 
-                        onClick={() => this.props.buy_pokemon_action(1)}
+                    <button className="btn btn-outline-success btn-sm mr"
+                            onClick={() => this.props.buy_pokemon_action(1)}
                     >Comprar</button>
                     <button className="btn btn-light btn-sm ml-3"
-                        onClick={() => this.props.return_pokemon_action(1)}
+                            onClick={() => this.props.return_pokemon_action(1)}
                     >Devolver</button>
-                </section>                
+                </section>
             </Fragment>
         )
     }
@@ -22,7 +22,7 @@ class CompraPokemon extends Component {
 const mapDispathToProps = {
     buy_pokemon_action,
     return_pokemon_action
-}
+};
 
 // null = mapStateToProps
 export default connect(null, mapDispathToProps)(CompraPokemon);

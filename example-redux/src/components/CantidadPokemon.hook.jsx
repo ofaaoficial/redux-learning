@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import {useSelector} from 'react-redux';
 
 const CantidadPokemonHook = () => {
@@ -10,6 +10,6 @@ const CantidadPokemonHook = () => {
             Unidad: {pokemon}
         </Fragment>
     )
-} 
+};
 
 export default CantidadPokemonHook;
