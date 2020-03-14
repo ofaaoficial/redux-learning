@@ -22,7 +22,8 @@ export const buscador = (state = initialState, action) => {
         case FETCH_POKEMON_FAILURE:
             return {
                 loading: false,
-                error: action.error
+                error: "No se encuentra ese pokemon.",
+                pokemon: ''
             }
         default: 
             return state;
